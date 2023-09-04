@@ -102,7 +102,7 @@ const OrderScreen = () => {
       refetch();
       toast.success('Order delivered');
     } catch (err) {
-      toast.error(err?.data?.message || err.message);
+      toast.error(err?.data?.message || err.error);
     }
   };
 
